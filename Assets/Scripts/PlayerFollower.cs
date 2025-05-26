@@ -25,18 +25,22 @@ public class PlayerFollower : MonoBehaviour
 
             if (Math.Abs(diff.x) >= distanceBeforeMoving.x)
             {
-                // If the player has moved more than 1 unit in the x direction, update the camera position
-                newPosition.x = cameraPosition.x + playerPosition.x - distanceBeforeMoving.x;
+                if (playerPosition.x > cameraPosition.x)
+                    newPosition.x = playerPosition.x - distanceBeforeMoving.x;
+                else
+                    newPosition.x = playerPosition.x + distanceBeforeMoving.x;
             }
 
             if (Math.Abs(diff.y) >= distanceBeforeMoving.y)
             {
-                // If the player has moved more than 1 unit in the y direction, update the camera position
-                newPosition.y = cameraPosition.y + playerPosition.y - distanceBeforeMoving.y;
+                if (playerPosition.y > cameraPosition.y)
+                    newPosition.y = playerPosition.y - distanceBeforeMoving.y;
+                else
+                    newPosition.y = playerPosition.y + distanceBeforeMoving.y;
             }
 
             // Keep the camera at the player's position, but offset by a fixed distance
-            camera.transform.position = new Vector3(newPosition.x, playerPosition.y, cameraPosition.z);
+            camera.transform.position = new Vector3(newPosition.x, newPosition.y, cameraPosition.z);
         }   
     }
 }

@@ -14780,7 +14780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 519420031}
   player: {fileID: 2025178920}
-  distanceBeforeMoving: {x: 2.5, y: 1.25}
+  distanceBeforeMoving: {x: 2.5, y: 1}
 --- !u!1 &695278523
 GameObject:
   m_ObjectHideFlags: 0
@@ -27673,7 +27673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2025178919}
-  moveSpeed: 3
+  moveSpeed: 4
 --- !u!212 &2025178921
 SpriteRenderer:
   m_ObjectHideFlags: 0
