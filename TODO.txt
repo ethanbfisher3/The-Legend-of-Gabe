@@ -39,4 +39,8 @@ Create Pixel Art for:
         dogs
         item pedestal
         shopkeeper
+    forest:
+        fence 
+        grass 
+        
         
