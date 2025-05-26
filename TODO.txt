@@ -1,11 +1,42 @@
 The Legend of Gabe:
 
-- End Goal:
+- End Goal: Make  functioning legend of Zelda Rogulike with various kits that get picked up on every level based on how many kills the player gets. 
+instead of a life system, there will be a coolness meter that goes down if hit and can only be increased by attacking and killing monsters. Players 
+can use this coolness to buy new upgrades or save it to survive hits in the future. This will be a dungeon crawler with levels based on forest, cave,
+colliseum, jungle, and a rest area called the dog park where the palyer can buy stuff.
 
-- Game Mechanics:
+- Game Mechanics: Coolness meter for health(when 0 you die), upgrades that change attacks or modify stats, rest area with a bunch of women 
+monsters have wave attack patterns taht can be deflected by certain shields that the player can hold
 
 Inventory
 
 - Open World:
 
 Top-down
+
+Create Pixel Art for:
+    Cave:
+        stalagmites
+        pebble
+        big rock
+        boulder
+        hole
+        puddle
+    colliseum:
+        sand background
+        colliseuem rotunda
+        bloody gate
+        gate
+        open gate
+    jungle:
+        droopy trees
+        vines
+        mushrooms
+        swampy water
+        green texture background
+    dog park:
+        women
+        dogs
+        item pedestal
+        shopkeeper
+        
