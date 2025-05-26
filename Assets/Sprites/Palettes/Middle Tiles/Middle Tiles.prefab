@@ -31,7 +31,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+<<<<<<< HEAD
   - {fileID: 695710127096301911}
+=======
+  - {fileID: 6091287388319376281}
+>>>>>>> Gabe
   m_Father: {fileID: 5594743761309300532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &2187849443143861476
@@ -163,6 +167,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 0, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 8
+      m_TileSpriteIndex: 8
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
@@ -182,6 +196,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 9d75021c3a1b92047b8e2134bffa19a4, type: 2}
   - m_RefCount: 1
+<<<<<<< HEAD
     m_Data: {fileID: 11400000, guid: 1b519570cdb65e44091882054a2d02ff, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 5128241c2f7bc114096a21a6eed8ede5, type: 2}
@@ -189,6 +204,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 18307899d538d694f99bc38ad535d3cd, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 71e078a3a55f0894ba9cc894e55bfa36, type: 2}
+=======
+    m_Data: {fileID: 11400000, guid: 5478426a548756c40b48ba15b4b8f2e0, type: 2}
+>>>>>>> Gabe
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -1379198164, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
@@ -207,6 +225,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1058171858, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
   - m_RefCount: 1
+<<<<<<< HEAD
     m_Data: {fileID: -1552539252, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 619890130, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
@@ -216,6 +235,11 @@ Tilemap:
     m_Data: {fileID: 278224350, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 12
+=======
+    m_Data: {fileID: 474025054, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
+  m_TileMatrixArray:
+  - m_RefCount: 9
+>>>>>>> Gabe
     m_Data:
       e00: 1
       e01: 0
@@ -234,7 +258,11 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
+<<<<<<< HEAD
   - m_RefCount: 12
+=======
+  - m_RefCount: 9
+>>>>>>> Gabe
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -357,7 +385,11 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+<<<<<<< HEAD
 --- !u!1001 &1653637504498027843
+=======
+--- !u!1001 &6672133605126249066
+>>>>>>> Gabe
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -365,6 +397,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7804226829651488146}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 1505395867761059788, guid: 6682321ff36a32f419a83b95f7e516f1, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -418,6 +451,57 @@ PrefabInstance:
       value: House
       objectReference: {fileID: 0}
     - target: {fileID: 7112227277375275963, guid: 6682321ff36a32f419a83b95f7e516f1, type: 3}
+=======
+    - target: {fileID: 581166329728924147, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 581166329728924147, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 581166329728924147, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 581166329728924147, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 581166329728924147, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 581166329728924147, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 581166329728924147, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 581166329728924147, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 581166329728924147, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 581166329728924147, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250550301987746716, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055038297212846460, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+      propertyPath: m_Name
+      value: rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971937260521759149, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+>>>>>>> Gabe
       propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
@@ -425,6 +509,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 6682321ff36a32f419a83b95f7e516f1, type: 3}
 --- !u!4 &695710127096301911 stripped
 Transform:
@@ -432,6 +517,15 @@ Transform:
   m_PrefabInstance: {fileID: 1653637504498027843}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &4338887761699576429
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+--- !u!4 &6091287388319376281 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 581166329728924147, guid: 86bada00c6546594a8498a57ebd98c88, type: 3}
+  m_PrefabInstance: {fileID: 6672133605126249066}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1895298851443730580
+>>>>>>> Gabe
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
