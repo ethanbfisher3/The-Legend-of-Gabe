@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: spritesheet_12
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Sprite: {fileID: -1552539252, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
+=======
+  m_Sprite: {fileID: 519530962, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
+>>>>>>> Gabe
 =======
   m_Sprite: {fileID: 519530962, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
 >>>>>>> Gabe
