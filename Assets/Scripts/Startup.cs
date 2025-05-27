@@ -21,6 +21,6 @@ public class Startup : MonoBehaviour
 
     void Start()
     {
-        Application.targetFrameRate = 12;
+        Application.targetFrameRate = 30;
     }
 }
