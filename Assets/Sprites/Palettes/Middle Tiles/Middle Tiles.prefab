@@ -30,6 +30,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+=======
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+>>>>>>> gabe:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
   m_Children:
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -41,6 +45,13 @@ Transform:
   - {fileID: 6091287388319376281}
 >>>>>>> Gabe
   m_Father: {fileID: 5594743761309300532}
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+=======
+=======
+  m_Children: []
+  m_Father: {fileID: 486158162705152481}
+>>>>>>> c9cc37d57352a19f211de41309f5bbf964a342c2:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
+>>>>>>> gabe:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &2187849443143861476
 Tilemap:
@@ -171,11 +182,25 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+=======
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+>>>>>>> gabe:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
   - first: {x: 0, y: 0, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 8
       m_TileSpriteIndex: 8
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+=======
+=======
+  - first: {x: 1, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+>>>>>>> c9cc37d57352a19f211de41309f5bbf964a342c2:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
+>>>>>>> gabe:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -198,6 +223,10 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a808dec63d0cfa74b8f278bd0f37a09e, type: 2}
   - m_RefCount: 1
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+=======
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+>>>>>>> gabe:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
     m_Data: {fileID: 11400000, guid: 9d75021c3a1b92047b8e2134bffa19a4, type: 2}
   - m_RefCount: 1
 <<<<<<< HEAD
@@ -211,10 +240,22 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 71e078a3a55f0894ba9cc894e55bfa36, type: 2}
 =======
     m_Data: {fileID: 11400000, guid: 5478426a548756c40b48ba15b4b8f2e0, type: 2}
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
 >>>>>>> Gabe
 =======
     m_Data: {fileID: 11400000, guid: 5478426a548756c40b48ba15b4b8f2e0, type: 2}
 >>>>>>> Gabe
+=======
+=======
+    m_Data: {fileID: 11400000, guid: d46283e3efb66374690a675eac59a1cb, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 98fadc116eac9e7479d1d6a204c86852, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: ce8c25cb9455166489272a21a7a6a1ba, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 93fce716f9b9db24f9c109968bbd41d4, type: 2}
+>>>>>>> c9cc37d57352a19f211de41309f5bbf964a342c2:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
+>>>>>>> gabe:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -1379198164, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
@@ -231,6 +272,10 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1414544896, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
   - m_RefCount: 1
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+=======
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+>>>>>>> gabe:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
     m_Data: {fileID: 1058171858, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
   - m_RefCount: 1
 <<<<<<< HEAD
@@ -248,12 +293,26 @@ Tilemap:
     m_Data: {fileID: 474025054, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 9
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
 >>>>>>> Gabe
 =======
     m_Data: {fileID: 474025054, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 9
 >>>>>>> Gabe
+=======
+=======
+    m_Data: {fileID: -7921052967969465774, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -1370661682523340017, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -8276262488406422588, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -5906973516983679737, guid: 6bfba6b88e57a084f914d513f78bd5d2, type: 3}
+  m_TileMatrixArray:
+  - m_RefCount: 11
+>>>>>>> c9cc37d57352a19f211de41309f5bbf964a342c2:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
+>>>>>>> gabe:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
     m_Data:
       e00: 1
       e01: 0
@@ -272,6 +331,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
 <<<<<<< HEAD
 <<<<<<< HEAD
   - m_RefCount: 12
@@ -281,12 +341,29 @@ Tilemap:
 =======
   - m_RefCount: 9
 >>>>>>> Gabe
+=======
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+  - m_RefCount: 9
+=======
+  - m_RefCount: 11
+>>>>>>> c9cc37d57352a19f211de41309f5bbf964a342c2:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
+>>>>>>> gabe:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
   m_Origin: {x: -3, y: -3, z: 0}
   m_Size: {x: 4, y: 4, z: 1}
+=======
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+  m_Origin: {x: -3, y: -3, z: 0}
+  m_Size: {x: 4, y: 4, z: 1}
+=======
+  m_Origin: {x: 0, y: -4, z: 0}
+  m_Size: {x: 4, y: 5, z: 1}
+>>>>>>> c9cc37d57352a19f211de41309f5bbf964a342c2:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
+>>>>>>> gabe:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -403,10 +480,14 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1653637504498027843
 =======
+=======
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
+>>>>>>> gabe:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
 --- !u!1001 &6672133605126249066
 >>>>>>> Gabe
 =======
@@ -556,10 +637,16 @@ Transform:
   m_PrefabInstance: {fileID: 6672133605126249066}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1895298851443730580
+<<<<<<< HEAD:Assets/Sprites/Palettes/Middle Tiles/Middle Tiles.prefab
 <<<<<<< HEAD
 >>>>>>> Gabe
 =======
 >>>>>>> Gabe
+=======
+=======
+--- !u!114 &7122568154691365213
+>>>>>>> c9cc37d57352a19f211de41309f5bbf964a342c2:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
+>>>>>>> gabe:Assets/Sprites/Palettes/Top Tiles/Top Tiles.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

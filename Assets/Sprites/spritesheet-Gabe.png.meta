@@ -631,6 +631,35 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      spritesheet_0: -1379198164
+      spritesheet_1: -1657334308
+      spritesheet_10: -1961928199
+      spritesheet_11: -1577513096
+      spritesheet_12: 519530962
+      spritesheet_13: 2099953613
+      spritesheet_14: 474025054
+      spritesheet_15: -1957570756
+      spritesheet_16: 1874190846
+      spritesheet_17: 1942424869
+      spritesheet_18: -812775404
+      spritesheet_19: -274249623
+      spritesheet_2: -1074336585
+      spritesheet_3: 973828770
+      spritesheet_4: 1058171858
+      spritesheet_5: 1803231427
+      spritesheet_6: 1115027568
+      spritesheet_7: 245480608
+      spritesheet_8: 1294320557
+      spritesheet_9: 1414544896
+=======
+>>>>>>> gabe
       entries: []
     nameFileIdTable:
       spritesheet_0: 8020143640844766479
@@ -653,6 +682,10 @@ TextureImporter:
       spritesheet_7: -1370661682523340017
       spritesheet_8: -8276262488406422588
       spritesheet_9: -5906973516983679737
+<<<<<<< HEAD
+=======
+>>>>>>> c9cc37d57352a19f211de41309f5bbf964a342c2
+>>>>>>> gabe
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
