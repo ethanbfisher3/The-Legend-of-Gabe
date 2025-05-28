@@ -21,7 +21,7 @@ public class Wizard : MonoBehaviour
 
         if (canTalkTo && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("Talking to wizard");
+            GameManager.Instance.textBox.ShowText("Hello, I am the wizard!", TextBox.TOP);
         }
     }
 
