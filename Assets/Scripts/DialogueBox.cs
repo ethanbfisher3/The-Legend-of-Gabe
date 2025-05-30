@@ -5,49 +5,89 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextBox : MonoBehaviour
+public class DialogueBox : MonoBehaviour
 {
     public Transform topLocation, bottomLocation;
     public Transform scrollSpritesParent;
     public Transform textSpritesParent;
     public Image letterPrefab;
-    public Transform letterStartPosition, letterStopPosition;
+    public Transform letterStartPosition;
+    public Image escapeButtonImage;
     public float regularLetterSize = 40f;
     public float distanceX = 12f;
     public float distanceY = 70f;
 
-    public const int TOP = 0;
-    public const int BOTTOM = 1;
-    public const int BASED_ON_PLAYER = 2;
+    public bool Done { get; private set; }
+    public bool IsOpen => scrollSpritesParent.gameObject.activeSelf;
 
     List<Image> textSpriteRenderers;
     Vector3 letterPosition;
+    bool skipNextLine;
+    bool started;
 
     void Start()
     {
         textSpriteRenderers = new List<Image>(textSpritesParent.GetComponentsInChildren<Image>());
 
         letterPosition = letterStartPosition.position;
+        skipNextLine = false;
+        Done = false;
+        started = false;
+
+        escapeButtonImage.gameObject.SetActive(false); // Hide the escape button initially
     }
 
-    public void ShowText(string text, int location = TOP)
+    void Update()
     {
-        StartCoroutine(ShowTextOverTimeEnumerator(text, location, 0.05f));
+        if (started && Input.GetKeyDown(KeyCode.E))
+        {
+            skipNextLine = true;
+        }
+
+        if (Done && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Escape)))
+        {
+            scrollSpritesParent.gameObject.SetActive(false); // Hide the text box when done
+            Done = false; // Reset done state
+            skipNextLine = false; // Reset skip state
+            letterPosition = letterStartPosition.position; // Reset letter position for next use
+            foreach (var spriteRenderer in textSpriteRenderers)
+            {
+                spriteRenderer.enabled = false; // Hide all sprites after finishing
+            }
+        }
+
+        escapeButtonImage.gameObject.SetActive(Done); 
     }
 
-    IEnumerator ShowTextOverTimeEnumerator(string text, int location = TOP, float time = 0.05f)
+    public void BeginDialogue(DialogueConfig config)
     {
+        if (Done || !started)
+            StartCoroutine(BeginDialogueEnumerator(config));
+    }
+
+    IEnumerator BeginDialogueEnumerator(DialogueConfig config)
+    {
+        started = true;
         scrollSpritesParent.gameObject.SetActive(true);
-        SetLocation(location);
+        SetLocation(config.location);
+        int currentSprite = 0;
 
         foreach (var spriteRenderer in textSpriteRenderers)
         {
             spriteRenderer.enabled = false; // Hide all sprites initially
         }
 
-        text = text.ToUpper(); // Convert text to uppercase for consistency
+        string text = config.text.ToUpper(); // Convert text to uppercase for consistency
         for (int i = 0; i < text.Length; i++)
         {
+            char letter = text[i];
+            if (letter == '`')
+            {
+                skipNextLine = false; // Reset skip state for new line
+                letterPosition = new Vector3(letterStartPosition.position.x, letterPosition.y - distanceY, letterPosition.z); // Move to the next line
+                continue; // Skip to the next iteration for the next character
+            }
+
             if (i >= textSpriteRenderers.Count)
             {
                 var newSprite = Instantiate(letterPrefab.gameObject, textSpritesParent).GetComponent<Image>();
@@ -57,15 +97,28 @@ public class TextBox : MonoBehaviour
                 newSprite.gameObject.SetActive(true); // Ensure the new sprite is active
                 textSpriteRenderers.Add(newSprite);
             }
-            char letter = text[i];
             var sprite = GetSpriteForLetter(letter);
-            textSpriteRenderers[i].enabled = sprite != null; // Enable the sprite for the letter
-            textSpriteRenderers[i].sprite = sprite; // Set the sprite for the letter
-            textSpriteRenderers[i].transform.position = letterPosition;
+            var currentSpriteRenderer = textSpriteRenderers[currentSprite];
+            currentSpriteRenderer.enabled = sprite != null; // Enable the sprite for the letter
+            currentSpriteRenderer.sprite = sprite; // Set the sprite for the letter
+            currentSpriteRenderer.transform.position = letterPosition;
             UpdateLetterPosition(letter);
+            
+            
+            if (letter == '.' || letter == '!' || letter == '?')
+            {
+                yield return new WaitForSeconds(config.timePerNewLine); // Wait for the specified time before showing the next line
+            }
+            else if (!skipNextLine)
+            {
+                yield return new WaitForSeconds(config.timePerLetter); // Wait for the specified time before showing the next letter
+            }
 
-            yield return new WaitForSeconds(time); // Wait for the specified time before showing the next letter
+            currentSprite++;
         }
+
+        Done = true;
+        started = false; // Reset started state after finishing
     }
 
     Sprite GetSpriteForLetter(char letter)
@@ -86,7 +139,6 @@ public class TextBox : MonoBehaviour
         else if (letter == '?')
             return Resources.Instance.punctuationSprites[3].sprite; // Question mark
 
-        // TODO Numbers handling
         if (char.IsDigit(letter))
         {
             int numberIndex = letter - '0'; // Assuming numbers are 0-9
@@ -101,13 +153,7 @@ public class TextBox : MonoBehaviour
 
     void UpdateLetterPosition(char lastLetter)
     {
-        int letterPixelsWide = LetterSize(lastLetter);
-        letterPosition = new Vector3(letterPosition.x + letterPixelsWide * distanceX, letterPosition.y, letterPosition.z);
-        if (letterPosition.x > letterStopPosition.position.x)
-        {
-            var startPosition = letterStartPosition.position;
-            letterPosition = new Vector3(startPosition.x, startPosition.y - distanceY, startPosition.z); // Reset position if it exceeds the stop position
-        }
+        letterPosition = new Vector3(letterPosition.x + LetterSize(lastLetter) * distanceX, letterPosition.y, letterPosition.z);
     }
 
     int LetterSize(char letter)
@@ -129,7 +175,7 @@ public class TextBox : MonoBehaviour
 
     void SetLocation(int location)
     {
-        transform.SetParent(location == TOP ? topLocation : bottomLocation, false);
+        transform.SetParent(location == DialogueConfig.TOP ? topLocation : bottomLocation, false);
         // TODO Based on player location
     }
 }

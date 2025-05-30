@@ -4,6 +4,7 @@ public class Wizard : MonoBehaviour
 {
     public TriggerEvent triggerEvent;
     public SpriteRenderer talkToSprite;
+    public DialogueConfig dialogue;
 
     bool canTalkTo = false;
 
@@ -21,7 +22,8 @@ public class Wizard : MonoBehaviour
 
         if (canTalkTo && Input.GetKeyDown(KeyCode.E))
         {
-            GameManager.Instance.textBox.ShowText("Hello, I am the wizard!", TextBox.TOP);
+            GameManager.Instance.dialogueBox.BeginDialogue(dialogue);
+            canTalkTo = false;
         }
     }
 
